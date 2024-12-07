@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequently Asked Questions</title>
+    <link rel="stylesheet" href="CSS/faqStyle.css">
+</head>
+<body>
+
+<div class="banner" >
+        <img src="IMAGES/banner.png" alt="banner">
+    </div>
+    <!-- Header Section -->
+    <header class="faq-header">
+        <h1>Frequently Asked Questions</h1>
+    </header>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" >
+        <div class="faq-item">
+            <button class="faq-question">What is StrideForward?</button>
+            <div class="faq-answer">
+                <p>StrideForward is a platform dedicated to promoting a healthy lifestyle through tailored workout plans, nutrition guides, and more!</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">What workout gears can I use?</button>
+            <div class="faq-answer">
+                <p>You can buy different workout gears online, or use things at home that can be used as a workout equipment, like chairs, tables, water jugs, and more!</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">How do I create a personalized workout plan?</button>
+            <div class="faq-answer">
+                <p>You can create a personalized workout plan by visiting the "Workouts" section, where you'll find templates for different fitness goals.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">Are your workout plans suitable for beginners?</button>
+            <div class="faq-answer">
+                <p>YFor beginners, start with 3–4 sessions per week focusing on different muscle groups. More experienced individuals can aim for 5–6 days of varied workouts, ensuring adequate rest for recovery.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">What’s the best time of day to exercise?</button>
+            <div class="faq-answer">
+                <p>The best time to exercise is when you feel most energetic and can commit consistently. Morning workouts boost energy for the day, while evening sessions can help relieve stress.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">How often should I work out each week?</button>
+            <div class="faq-answer">
+                <p>Yes! We offer workout plans for all fitness levels, including beginner, intermediate, and advanced.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">How do I prevent injuries while exercising?</button>
+            <div class="faq-answer">
+                <p>Always warm up before starting, maintain proper form, and avoid lifting weights beyond your capability. Stretch after workouts to improve flexibility and reduce soreness.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">How do I stay motivated to work out?</button>
+            <div class="faq-answer">
+                <p>Set achievable goals, track progress, and switch up your routine to keep it exciting. Working out with a friend or listening to your favorite music also helps.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">What’s the ideal balance between workout and rest days?</button>
+            <div class="faq-answer">
+                <p>A good balance is 5–6 workout days with 1–2 rest days per week. Listen to your body and adjust if you feel fatigued.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">How do I contact customer support?</button>
+            <div class="faq-answer">
+                <p>You can reach our customer support team via the "Contact Us" page, press Home to access this page. We’re available 24/7 to assist you with any inquiries.</p>
+            </div>
+        </div>
+        <div class="back-to-menu">
+        <a href="menu.html">Back to Menu</a>
+    </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="gears.html">Gears</a></li>
+                <li><a href="workouts.html">Workouts</a></li>
+                <li><a href="nutrition.html">Nutrition</a></li>
+                <li><a href="faqs.html" class="active">FAQ's</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2024 StrideForward. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript for FAQ Accordion -->
+    <script>
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const answer = button.nextElementSibling;
+
+                // Collapse all open answers except the clicked one
+                document.querySelectorAll('.faq-answer').forEach(ans => {
+                    if (ans !== answer) {
+                        ans.style.display = 'none';
+                    }
+                });
+
+                // Toggle the clicked answer
+                if (answer.style.display === "block") {
+                    answer.style.display = "none";
+                } else {
+                    answer.style.display = "block";
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

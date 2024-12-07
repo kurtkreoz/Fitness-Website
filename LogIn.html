@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="CSS/LogInStyle.css">
+    <script>
+        function validateCredentials() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            if (username === "IIT406" && password === "LETRAN") {
+                alert("Login successful!");
+                window.location.href = "menu.html"; // Redirect to the menu page
+            } else {
+                alert("Invalid Credentials");
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- Sidebar Navigation -->
+    <div class="sidebar">
+        <ul>
+            <li><a href="PhotoGallery.html"><img src="IMAGES/gallery icon.png" alt="Gallery Icon"> Gallery</a></li>
+            <li><a href="LogIn.html"><img src="IMAGES/login icon.png" alt="Log-In Icon"> Login</a></li>
+            <li><a href="ContactUs.html"><img src="IMAGES/contact icon.png" alt="Contact Icon"> Contact Us</a></li>
+        </ul>
+    </div>
+
+    <!-- Banner Section -->
+    <div class="banner" style="background-image: url('IMAGES/bg.png');">
+        <div class="banner-content">
+            <form>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br>
+                <button type="button" class="btn" onclick="validateCredentials()">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 StrideForward. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

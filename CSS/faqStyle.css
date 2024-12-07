@@ -1,0 +1,156 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #dadada;
+}
+
+/* Banner Section */
+.banner {
+    text-align: center;
+    margin: 0;  
+    padding: 0; 
+}
+
+.banner img {
+    width: 100%;
+    height: 470px;
+    display: block;  
+    margin: 0;  
+}
+
+/* Header Section */
+.faq-header {
+    background-color: #840000;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.faq-header h1 {
+    margin: 0;
+    font-size: 28px;
+    font-family: sans-serif;
+}
+
+/* FAQ Section */
+.faq-section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* FAQ Question */
+.faq-question {
+    width: 100%;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: left;
+    padding: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+    background-color: #ddd;
+}
+
+/* FAQ Answer */
+.faq-answer {
+    display: none;
+    padding: 15px;
+    background-color: white;
+    color: #333;
+}
+
+/* Back to Menu Button */
+.back-to-menu {
+    text-align: center;
+    margin: 20px 0; /* Add spacing above and below the button */
+}
+
+.back-to-menu a {
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #840000; /* Match the theme color */
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover Effect for Button */
+.back-to-menu a:hover {
+    background-color: #600000;
+}
+
+
+/* Navbar */
+.navbar {
+    font-family: Courier New;
+    font-size: 20px;
+    background-color: #840000;
+    color: white;
+    padding: 8px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.navbar .nav-links a:hover {
+    color: gray;
+}
+
+.navbar a.active{
+  background-color: black;
+  color: white;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .photo-gallery {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .photo-gallery {
+        grid-template-columns: 1fr; /* 1 column for smaller screens */
+    }
+}
+/* Footer */
+footer {
+    font-family: Courier New;
+    background-color: #840000;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+}

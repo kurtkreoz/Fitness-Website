@@ -1,0 +1,132 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #840000;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    z-index: 1000;
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+    text-align: left;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #600000;
+    border-radius: 5px;
+}
+
+.sidebar ul li img {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+/* Banner Section */
+.banner {
+    margin-left: 250px; 
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-content {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.banner-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.banner-content input[type="text"],
+.banner-content input[type="password"] {
+    width: 250px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn {
+    font-family: sans-serif;
+    margin-top: 10px;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #840000;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #600000;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .photo-gallery {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 480px) {
+    .photo-gallery {
+        grid-template-columns: 1fr; 
+    }
+}
+
+/* Footer Section */
+footer {
+    font-family: Courier New;
+    background-color: #840000;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+}
